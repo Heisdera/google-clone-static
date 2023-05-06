@@ -1,0 +1,136 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #ddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primary-color);
+}
+
+.row {
+  padding: 16px 10px;
+}
+
+/* Navigation */
+#navbar {
+  background: var(--primary-color);
+  display: block;
+  position: sticky;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#navbar ul li a {
+  padding-right: 10px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+#navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+#navbar ul li img {
+  width: 30px;
+  border-radius: 50%;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Google */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding-top: 120px;
+}
+
+.content .logo img {
+  display: block;
+  align-self: center;
+  justify-self: center;
+  width: 50%;
+  margin: auto;
+}
+
+.content .search-bar {
+  display: flex;
+  border: 1px solid var(--secondary-color);
+  padding: 0 16px;
+  position: relative;
+  border-radius: 20px;
+  background: var(--primary-color);
+  margin-top: 30px;
+  box-shadow: 0px 1px 4px var(--secondary-color);
+}
+
+.content .search-bar input {
+  width: 450px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding-right: 30px;
+}
+
+.content .search-bar img {
+  width: 24px;
+  position: absolute;
+  top: 7px;
+  right: 16px;
+}
+
+.fa-search {
+  align-self: center;
+  font-size: 13px;
+  margin-right: 10px;
+  color: #646464;
+}
+
+.content .most-visited {
+  display: flex;
+  flex-direction: row;
+}
+
+.most-visited div {
+  margin-top: 20px;
+}
+
+.most-visited div a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  align-self: center;
+  padding: 15px 27px;
+}
+
+.most-visited div a:hover {
+  background: var(--secondary-color);
+  border-radius: 5px;
+}
+
+.most-visited div img {
+  display: block;
+  align-self: center;
+  justify-self: center;
+  background: #eee;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 13px;
+  margin-left: 2px;
+  width: 90%;
+}
